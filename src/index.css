@@ -4,12 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --blue : #5dbcfc;
+    --border-color: #3f3f4666;
+}
+
+* {
+    box-sizing: border-box;
+    letter-spacing : 1px;
+}
+
 body {
-    background-color: #000;
+    background-color: #fafafa;
 }
 
-.light {
-    color :  #fff;
+.darkBody {
+    background-color : #000000;
 }
-
 
