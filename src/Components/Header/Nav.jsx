@@ -4,20 +4,19 @@ import { IoClose } from "react-icons/io5";
 
 const Nav = (props) => {
 
-    
 
     function hideLinks() {
-        
+        props.m.current.classList.add("hidden")
     }
     
     return (
-        <nav className={`${props.flexIcon} ${props.styles} dark:bg-[#27272a] bg-[#ffffff] shadow-ul-shadow pt-[0.77rem] pb-[calc(12.32px+8px)] px-[1.6rem] `}> 
+        <nav className={`${props.flexIcon} ${props.styles}  dark:bg-[#27272a] bg-[#ffffff] shadow-ul-shadow py-[0.77rem] px-[1.6rem]  `}> 
             <ul className={`${props.flexLinks} gap-4 `}>
             {
                 links.links.map((link , index) => {
                 return(
-                    <li key={index} className={`${props.link}`} >
-                        <a className={` duration-200 opacity-[0.9] font-bold text-[0.88rem] dark:text-white dark:hover:text-[var(--blue)] hover:text-[var(--blue)] dark:hover:text-[0.9rem] hover:text-[0.9rem] dark:hover:opacity-100 hover:opacity-100`} href="#">
+                    <li key={index} className={`${props.link} ${index === 4 ? props.borderN : props.border}`} >
+                        <a className={`py-2 w-full block duration-200 opacity-[0.9] font-bold text-[0.88rem] dark:text-white dark:hover:text-[var(--blue)] hover:text-[var(--blue)] dark:hover:text-[0.9rem] hover:text-[0.9rem] dark:hover:opacity-100 hover:opacity-100`} href="#">
                             {link}
                         </a>
                     </li>
