@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    currentMode : window.localStorage.getItem("status") || window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+    currentMode : window.localStorage.getItem("status") ? window.localStorage.getItem("status") : window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
 }
 
 export const main = createSlice({
@@ -10,10 +10,12 @@ export const main = createSlice({
   reducers: {
     setColor : (state, action) => {
       state.currentMode = action.payload
+      if(action.payload === "light") {
+        document.documentElement.classList.remove("dark")
+      }
       document.documentElement.classList.add(action.payload)
       window.localStorage.setItem("status" , action.payload )
-      console.log(action.payload)
-    }
+     }
   },
 })
 

@@ -9,7 +9,7 @@ import { setColor } from '../../Store/Slices/Main';
 const Header = () => {
 
   const burgerIcon = useRef()
-  const currentMode = useSelector((state) => state.main.currentMode) === "light";
+  const currentMode = useSelector((state) => state.main.currentMode) === "dark";
   const dispatch = useDispatch()
   
   function showLinks (){
