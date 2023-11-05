@@ -12,9 +12,11 @@ export const main = createSlice({
       state.currentMode = action.payload
       if(action.payload === "light") {
         document.documentElement.classList.remove("dark")
+        document.body.classList.remove("dark")
       }
       document.documentElement.classList.add(action.payload)
       window.localStorage.setItem("status" , action.payload )
+      document.body.classList.add(window.localStorage.getItem("status"))
      }
   },
 })

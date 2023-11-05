@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     document.documentElement.classList.add(currentMode)
     window.localStorage.setItem("status" , currentMode )
+    document.body.classList.add(currentMode)
   }, [])
   
 
