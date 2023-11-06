@@ -18,7 +18,7 @@ function App() {
   
 
   return (
-    <div className="dark:bg-[#18181b] bg-[#f1f1f1] dark:border-[#27272c] border-solid border-[2px] container mx-auto">
+    <div className="  dark:bg-[#18181b] bg-[#f1f1f1] dark:border-[#27272c] border-solid border-[2px] border-[#cacaca84] container mx-auto lg:px-16 px-7">
       <Header/>
       <Hero/>
       <Main/>

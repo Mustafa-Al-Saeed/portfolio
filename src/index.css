@@ -7,6 +7,12 @@
 :root {
     --blue : #5dbcfc;
     --border-color: #3f3f4666;
+    --DM-W-T: #f4f4f5;
+    --DM-G-T: #a1a1aa;
+    --DM-G-T2: #1d1d20;
+    --LM-B-C: #27272a;
+    --LM-B-C2:#fafafa;
+    --LM-B-C3:#52525b;
 }
 
 * {

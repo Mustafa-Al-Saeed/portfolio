@@ -1,3 +1,4 @@
 {
-    "links" : ["About" , "Articles" , "Projects" , "Speaking" , "Contact"]
+    "links" : ["About" , "Articles" , "Projects" , "Speaking" , "Contact"],
+    "icons" : ["AiOutlineTwitter" , "AiOutlineInstagram" , "AiOutlineGithub" , "AiFillLinkedin"]
 }

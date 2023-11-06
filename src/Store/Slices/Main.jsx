@@ -17,7 +17,7 @@ export const main = createSlice({
       document.documentElement.classList.add(action.payload)
       window.localStorage.setItem("status" , action.payload )
       document.body.classList.add(window.localStorage.getItem("status"))
-     }
+    }
   },
 })
 
