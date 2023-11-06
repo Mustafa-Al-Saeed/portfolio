@@ -1,4 +1,5 @@
 {
     "links" : ["About" , "Articles" , "Projects" , "Speaking" , "Contact"],
+    "linksFooter" : ["About" , "Project" , "Speaking" , "Users"],
     "icons" : ["AiOutlineTwitter" , "AiOutlineInstagram" , "AiOutlineGithub" , "AiFillLinkedin"]
 }

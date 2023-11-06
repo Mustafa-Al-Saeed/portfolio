@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     currentMode : window.localStorage.getItem("status") ? window.localStorage.getItem("status") : window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
-}
+  }
 
 export const main = createSlice({
   name: 'main',
