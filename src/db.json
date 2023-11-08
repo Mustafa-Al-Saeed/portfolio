@@ -1,5 +1,94 @@
 {
-    "links" : ["About" , "Articles" , "Projects" , "Speaking" , "Contact"],
-    "linksFooter" : ["About" , "Project" , "Speaking" , "Users"],
-    "icons" : ["AiOutlineTwitter" , "AiOutlineInstagram" , "AiOutlineGithub" , "AiFillLinkedin"]
+    "projectDataa":{
+        "htmlandcss" : {
+            "title": "HTML & CSS",
+            "blogs": [
+                {
+                    "id" : 1,
+                    "image" : "https://www.mgsmfg.com/wp-content/uploads/2021/07/MGS-web-interior-image-1889x694-iMGS.jpg",
+                    "title" : "React Project",
+                    "paragraph" : "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+                    "url" : "sssssssssss"
+                },
+                {
+                    "id" : 2,
+                    "image" : "https://rb.gy/nz4rbf",
+                    "title" : "React Project",
+                    "paragraph" : "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+                    "url" : "sssssssssss"
+                },
+                {
+                    "id" : 3,
+                    "image" : "https://rb.gy/1iy252",
+                    "title" : "React Project",
+                    "paragraph" : "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+                    "url" : "sssssssssss"
+                }
+            ]
+        },
+        "javascript" : {
+            "title" : "Javascript",
+            "blogs" : [
+                {
+                    "id" : 1,
+                    "image" : "https://rb.gy/nz4rbf",
+                    "title" : "React Project",
+                    "paragraph" : "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+                    "url" : "sssssssssss"
+                },
+                {
+                    "id" : 2,
+                    "image" : "https://rb.gy/nz4rbf",
+                    "title" : "React Project",
+                    "paragraph" : "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+                    "url" : "sssssssssss"
+                }
+            ]
+        },
+        "reactandmui" : {
+            "title" : "React & MUI",
+            "blogs" : [
+                {
+                    "id" : 1,
+                    "image" : "./Assets/Images/image-article/1.jpg",
+                    "title" : "React Project",
+                    "paragraph" : "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+                    "url" : "sssssssssss"
+                },
+                {
+                    "id" : 2,
+                    "image" : "./Assets/Images/image-article/2.jpg",
+                    "title" : "React Project",
+                    "paragraph" : "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+                    "url" : "sssssssssss"
+                },
+                {
+                    "id" : 3,
+                    "image" : "./Assets/Images/image-article/4.jpg",
+                    "title" : "React Project",
+                    "paragraph" : "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+                    "url" : "sssssssssss"
+                }
+            ]
+        },
+        "nodeandexpress" : {
+            "title" : "Node & Express",
+            "blogs" : [
+                {
+                    "id" : 1,
+                    "image" : "./Assets/Images/image-article/7.jpg",
+                    "title" : "React Project",
+                    "paragraph" : "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+                    "url" : "sssssssssss"
+                },
+                {
+                    "id" : 2,
+                    "image" : "./Assets/Images/image-article/8.jpg",
+                    "title" : "React Project",
+                    "paragraph" : "Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex tempore dolor in, accusantium laudantium accusamus.",
+                    "url" : "sssssssssss"
+                }
+            ]
+        }
+    }
 }

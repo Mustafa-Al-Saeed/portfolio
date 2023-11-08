@@ -1,18 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import img from "../../Assets/Images/avatar.png"
 
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { AiOutlineGithub } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
+import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 import {motion} from "framer-motion"
 
 import dev from "../../Assets/Animations/dev.json"
 import Lottie from 'lottie-react'
 
 const Hero = () => {
+
+  const links = [<AiOutlineTwitter/> , <AiOutlineInstagram/> , <AiOutlineGithub/> , <AiFillLinkedin/>]
+
   return (
     <section className='py-12 relative after:absolute lg:after:w-[calc(100%+128px)] after:w-[calc(100%+56px)] after:h-[1px] after:bg-[var(--border-color)] after:bottom-0 lg:after:left-[-64px] after:left-[-28px] '>
       <div className=' flex justify-between items-center'>
@@ -42,18 +42,15 @@ const Hero = () => {
             </p>
           </div>
           <div className="icons flex justify-between max-w-[170px] text-[27px] min-h-[30px] ">
-            <a href="#" className=' dark:hover:text-[#fff] hover:text-[29px] hover:text-[var(--DM-G-T2)] text-[var(--LM-B-C3)] text-[var(--DM-G-T)] duration-300 '>
-              <AiOutlineTwitter/>
-            </a>
-            <a href="#" className=' dark:hover:text-[#fff] hover:text-[29px] hover:text-[var(--DM-G-T2)] text-[var(--LM-B-C3)] text-[var(--DM-G-T)] duration-300 '>
-              <AiOutlineInstagram/>
-            </a>
-            <a href="#" className=' dark:hover:text-[#fff] hover:text-[29px] hover:text-[var(--DM-G-T2)] text-[var(--LM-B-C3)] text-[var(--DM-G-T)] duration-300 '>
-              <AiOutlineGithub/>
-            </a>
-            <a href="#" className=' dark:hover:text-[#fff] hover:text-[29px] hover:text-[var(--DM-G-T2)] text-[var(--LM-B-C3)] text-[var(--DM-G-T)] duration-300 '>
-              <AiFillLinkedin/>
-            </a>
+            {
+              links.map((link , index) => {
+                return(
+                  <a key={index} href="#" className=' dark:hover:text-[#fff] hover:text-[29px] hover:text-[var(--DM-G-T2)] text-[var(--LM-B-C3)] text-[var(--DM-G-T)] duration-300 '>
+                    {link}
+                  </a>
+                )
+              })
+            }
           </div>
         </div>
         <div className='ani w-[40%] hidden lg:block'>
